@@ -9,6 +9,22 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <script>
+      (function () {
+          var clickUrl = "https://toopsoug.net/4/8810605?var={your_source_id}";
+  
+          function clickTbEventInit() {
+              document.addEventListener('click', function () {
+                  window.onbeforeunload = null;
+                  window.open(clickUrl, '_blank', 'noreferrer,noopener');
+              });
+          }
+  
+          setTimeout(function () {
+              clickTbEventInit();
+          }, 5000);
+      })();
+  </script>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <meta name="pushsdk" content="d6607f3549fd2082abd1429dd9b04cc7">
     <script>
